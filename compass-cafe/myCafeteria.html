@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasaporte Compass de Cafés Especiales</title>
+    <link rel="stylesheet" href="STYLES/mycafeteria.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Marcellus+SC&display=swap" rel="stylesheet">
+    <script src="Functions/perfil.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="img/logo/logo.jpg" alt="Logo Compass">
+            </div>
+            <ul class="menu">
+                <li><a href="cafeteriasNueva.html">Cafeterías</a></li>
+                <li><a href="myCafeteria.html">Mi cafetería</a></li>
+            </ul>
+            <div class="user-icon">
+                <a href="#"><span class="material-icons">account_circle</span></a>
+                <div class="hover-menu">
+                    <a href="editarInfoPage.html">Editar mi sitio</a>
+                    <a id="cerrarSesionbtn" href="index.html">Cerrar sesión</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <body>
+        <div class="contenido">
+            <div class="informacion">
+
+                <style id="url-img">
+                    .informacion {background: url('img/portada/default.png')}
+                </style>
+                <!-- Botones encima del título -->
+                <div class="buttons">
+                    <button onclick="location.href='editarInfoPage.html'">Editar Información</button>
+                    <button onclick="location.href='cafeteriasNueva.html'">Mira como se ve tu tienda en la sección cafeterías</button>
+                    <button id="btnParticipar" onclick="location.href='registrarBebida.html'">Partícipa en próxima versión 2025-2</button>
+                </div>
+                <!-- Contenido de la cafetería -->
+                <h1 id="titulo"></h1>
+                <p id="descripcionLarga"></p>
+            </div>
+        </div>
+        <body>
+        <div class="cafe-especialidad">
+            <header id="header">
+                <h2>Nuestro Café de Especialidad</h2>
+            </header>
+    
+            <div class="cafe-especial">
+                <div class="cafe-imagen">
+                    <img id="imgBebida" src="img/bebida/default.png" alt="Imagen de Café Especial">
+                </div>
+                <div class="cafe-info">
+                    <h3 id="nombre-bebida"></h3>
+                    <p id="descripcionBebida"></p>
+                </div>
+            </div>
+    
+            <hr class="linea-divisoria">
+    
+            <div class="contacto">
+                <h4>Contáctanos</h4>
+                <p id="direccion"></p>
+                <p id="instagram"></p>
+                <p id="numCelular"></p>
+            </div>
+        </div>
+    </body>
+    <footer>
+        <div class="footer-content container">
+            <div class="footer-logo">
+                <img src="img/logo/Logo Png.png" alt="Logo Compass">
+            </div>
+            <div class="footer-contact">
+                <h3>Contáctanos</h3>
+                <ul>
+                    <li><a href="https://instagram.com/compassdecafe">@compassdecafe</a></li>
+                    <li><a href="mailto:pasaportedigital@gmail.com">pasaportedigital@gmail.com</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <a href="politicas.html">Políticas de privacidad</a>
+            <a href="terminos.html">Términos y condiciones</a>
+            <p>© 2025, Pasaporte Compass de Cafés Especiales por UMNG</p>
+        </div>
+    </footer>
+    

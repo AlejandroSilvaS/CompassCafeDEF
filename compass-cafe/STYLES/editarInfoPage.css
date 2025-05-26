@@ -1,0 +1,505 @@
+*{
+    margin:0;
+    padding:0;
+    /*box-sizing: border-box;*/
+    /*background-color: #E8D8B0;*/
+}
+
+header {
+    background-color: #ffffff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+header li a{
+    text-decoration: none;
+}
+
+nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo img {
+    height: 50px;
+    margin-left: 30px;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+nav .menu .li-micafe{
+    align-self: flex-end;
+}
+
+nav .menu li a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav .menu li a:hover {
+    color: #978B5B;
+}
+
+.user-icon .material-icons {
+    font-size: 36px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    margin-right: 30px;
+}
+
+.user-icon .material-icons:hover {
+    color: #978B5B;
+}
+.user-icon {
+    position: relative;
+}
+
+.user-icon .hover-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 160px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.user-icon .hover-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.4;
+    transition: background-color 0.3s ease;
+}
+
+.user-icon .hover-menu a:hover {
+    background-color: #E8D8B0;
+}
+
+.user-icon:hover .hover-menu {
+    display: block;
+}
+
+ul{
+    list-style-type: none;
+    gap:0;
+}
+
+.formulario img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.pie-foto{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.titulo{
+    background-color: rgba(232,216,176,0.6);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.titulo h1{
+    margin-left: 16.6%;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.formulario .mensaje-error{
+    font-size: 13px;
+    margin-bottom: 10px;
+    display: none;
+}
+
+.formulario .mensaje-error-activo{
+    display: block;
+}
+
+.grupo__mensaje{ /*Mensaje de error al dar clic en "Registrar"*/
+    height: 45px;
+    line-height: 45px;
+    background: #F66868;
+    padding:0 15px;
+    border-radius: 3px;
+    margin-top: 14px;
+    display: none;
+}
+
+.grupo__mensaje-activo{
+    display: block;
+}
+
+body{
+    background-color: #fff;   /* Tu color de fondo base */
+}
+
+#grupo__nombre__tienda, #grupo__bebida,#grupo__direccion{
+    grid-column: span 2;
+}
+
+#grupo__largeDescripcion, #grupo__breveDescripcion,
+#grupo__descripcionBebida, #grupo__mensaje{
+    grid-column: span 2;
+}
+
+#grupo__imagenPortada, #grupo__imagenLogo, #grupo__imagenBebida{
+    grid-column: span 2;
+}
+
+.grupo__botonRegistrar{
+    grid-column: span 2;
+}
+
+.descripcionlarga{
+    height: 150px;
+}
+
+.breveDescripcion{
+    height: 100px;
+}
+
+.grupo__botonRegistrar{
+    align-self: center;
+    padding-bottom: 40px;
+}
+
+i{
+    height: auto;
+    width: auto;
+}
+
+.boton{
+    width: 100%;
+    margin: 20px auto;  
+    font-size: 16px;
+    font-weight: bold;
+    background: #050505;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    padding: 12px 45px;
+    text-align: center;
+    margin-bottom: 10px;
+    transition: .1s erase all;
+}
+
+.boton:hover{
+    box-shadow: 3px 0px 30px rgba(163,163,163,1);
+}
+
+.mensaje-exito{
+    font-size: 15px;
+    color:#119200;
+    margin-top: 0;
+    margin-bottom: 35px;
+    display: none;
+}
+
+.mensaje-exito-activo{
+    display:block;
+}
+
+.formInput{
+    width:100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 15px;
+    border-radius: 5px;
+    border: 1px solid #A48C8C;
+    background: #fff;
+    transition: .3s ease all;
+}
+
+.formulario textarea{
+    width: 100%;
+    height: 100px;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #A48C8C;
+    background: #fff;
+    resize: none;
+}
+
+.formulario__grupo-correcto textarea{
+    border: 3px solid #119200;
+}
+
+.formulario__grupo-incorrecto textarea{
+    border: 3px solid #bb2929;
+}
+
+.formulario textarea:focus{
+    border: 3px solid #534343;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163,163,163,0.4);
+}
+
+.formulario .formInput:focus{
+    border: 3px solid #534343;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163,163,163,0.4);
+}
+
+.etiquetaInput{
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+h1{
+    font-family: 'Marcellus SC', serif;
+}
+
+body, label,input,textarea,button{
+    font-family: 'Inter',sans-serif;
+}
+
+.formulario__grupo-correcto .formInput{
+    border: 3px solid #119200;
+}
+
+.formulario__grupo-incorrecto .etiquetaInput{
+    color:#bb2929;
+}
+
+.formulario__grupo-incorrecto .formInput{
+    border: 3px solid #bb2929;
+}
+
+/* -----Footer------ */
+footer {
+    width: 100%;
+    background-color: #E8D8B0;
+    color: #000;
+    padding: 40px 0;
+    font-family: 'Inter', sans-serif;
+    margin-top: 30px;
+}
+
+.footer-bottom p{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+
+    max-width: 100px; /* Reducir el tamaño del logo */
+    height: auto; /* Mantener la proporción */
+
+}
+
+.footer-contact {
+    flex: 2;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-contact ul {
+    padding: 0;
+}
+
+.footer-contact ul li {
+    margin-bottom: 8px;
+}
+
+.footer-contact ul li a{
+    text-decoration: none;
+    color:#534343;
+}
+
+
+.footer-links {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-links a {
+    margin-left: 15px;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    padding-top: 10px;
+    border-top: 1px solid #000;
+}
+
+.footer-bottom a {
+    margin-left: 15px;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+/* -----Footer------ */
+
+@media only screen and (min-width:769px) /*Pantalla PC*/
+{
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(12,1fr);
+        grid-template-rows: 120px auto;
+    }
+
+    .titulo{
+        grid-column: 1/13;
+        grid-row: 1/2;         
+    }
+    .formulario{
+        grid-column: 3/-3;
+        grid-row: 2/3; 
+
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px
+    }
+}
+
+@media only screen and (max-width:768px) /*Pantalla Celular*/
+{
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat(4,1fr); 
+        grid-template-rows: 80px auto;
+    }
+
+    h1{
+        font-size: 18px;
+    }
+
+    h3{
+        font-size: 11px;
+    }
+
+    body, label,input,textarea,button{
+        font-size: 11px;
+    }
+
+    .titulo{
+        grid-column: 1/5;
+        grid-row: 1/2;     
+        
+        margin-bottom: 10px;
+    }
+    .formulario{
+        grid-column: 1/5;
+        grid-row: 2/3; 
+
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 7px;
+
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    #grupo__NIT, #grupo__correo, #grupo__cuentaInstagram,
+    #grupo__numeroCelular{
+        grid-column: span 2;
+    }
+
+    .formulario input, .formulario textarea{
+        margin-top: 5px;
+    }
+
+
+    .flecha{
+        margin-left: 5px;
+    }
+
+    .boton{
+        font-size: 12px;
+    }
+
+    .grupo__mensaje{ /*Mensaje de error al dar clic en "Registrar"*/
+        height: 35px;
+        line-height: 35px;
+        padding: 0 5px;
+        border-radius: 3px;
+        margin-top: 14px;
+        font-size: 10px;
+    }
+
+    .formulario .mensaje-error{
+        font-size: 11px;
+    }
+
+    .formInput{
+        padding: 12px;
+        box-sizing: border-box;
+    }
+
+    .formulario textarea{
+        box-sizing: border-box;
+    }
+
+    .grupo__mensaje{ /*Mensaje de error al dar clic en "Registrar"*/
+        height: 30px;
+        line-height: 30px;
+        background: #F66868;
+        padding:0;
+        border-radius: 3px;
+        margin-top: 14px;
+        font-size: 9px;
+    }
+
+    .grupo__botonRegistrar .boton{
+        margin-bottom: 0;
+    }
+
+    .grupo__botonRegistrar{
+        padding-bottom: 0;
+    }
+
+}

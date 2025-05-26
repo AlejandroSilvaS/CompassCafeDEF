@@ -1,0 +1,412 @@
+/* Estilos Generales */
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    color: #333;
+}
+
+.container {
+    width: 100%; /* Ajuste a 100% para hacerlo responsivo */
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background-color: transparent;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo img {
+    height: 50px;
+}
+
+nav .logo{
+    padding-right: 10px;
+}
+
+nav .menu {
+    display: flex;
+    gap: 25px;
+    padding: 0;
+    margin: 0;
+}
+
+nav .menu li a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+nav .menu li a:hover {
+    color: #978B5B;
+}
+
+.user-icon .material-icons {
+    font-size: 36px;
+    color: #333;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.user-icon .material-icons:hover {
+    color: #978B5B;
+}
+
+.user-icon {
+    position: relative;
+}
+
+.user-icon .hover-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    width: 160px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 10;
+}
+
+.user-icon .hover-menu a {
+    display: block;
+    padding: 12px 20px;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 1.4;
+    transition: background-color 0.3s ease;
+}
+
+.user-icon .hover-menu a:hover {
+    background-color: #E8D8B0;
+}
+
+.user-icon:hover .hover-menu {
+    display: block;
+}
+
+/* Estilos para la sección de contenido */
+.contenido {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.informacion {
+    position: relative;
+    padding: 50px;
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+
+    background: no-repeat center center; /* Fondo de imagen */
+    background-size: cover; /* Para que cubra todo el área */
+}
+
+.informacion::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6); /* Cambia el 0.5 para ajustar opacidad */
+    z-index: 1;
+}
+
+/* Para que el contenido esté encima */
+.informacion > * {
+    position: relative;
+    z-index: 2;
+}
+
+h1 {
+    font-family: 'Marcellus SC', serif;
+    font-size: 36px;
+    color: #FFF;
+    margin: 0;
+}
+
+.informacion p {
+    font-size: 18px;
+    color: #FFF;
+    line-height: 1.6;
+    margin: 20px 0;
+}
+
+.buttons {
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.buttons button {
+    background-color: #423535;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px 10px;
+    border-radius: 13px; /* Redondear bordes */
+    transition: background-color 0.3s;
+}
+
+.buttons button:hover {
+    background-color: #978B5B;
+}
+/* Estilos Generales */
+.cafe-especialidad {
+    background-color: #E8D8B0;
+    padding: 40px 0;
+    margin-top: 40px;
+    text-align: left;
+}
+
+.cafe-especialidad header {
+    margin-bottom: 20px;
+    display: flex;
+}
+
+.cafe-especialidad h2 {
+    font-size: 24px;
+    color: #4E4E4E;
+    font-family: 'Marcellus SC', serif;
+    text-decoration: underline; /* Subraya el título */
+    margin-left: 12%;
+    margin-right: 30%;
+}
+
+.btnBebida{
+    margin-left: 15px;
+    padding: 8px 15px;
+    border-radius: 15px;
+    background:#4E4E4E;
+    color:#fff;
+    font-family: 'Marcellus SC',serif;
+    font-size: 18px;
+    border-style: none;
+    margin-top:12px;
+    margin-bottom:12px;
+    cursor: pointer;
+}
+
+.btnBebida:hover{
+    background:#383737;
+    box-shadow: 0 2px 5px rgba(44, 41, 41, 0.2);
+
+}
+
+.cafe-especial {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.cafe-imagen img {
+    border-radius: 50%;
+    width: 250px; /* Agranda un poco la imagen */
+    height: 250px;
+    object-fit: cover;
+    margin-right: 30px;
+}
+
+.cafe-info {
+    margin-left: 20px;
+    max-width: 500px;
+}
+
+.cafe-info h3 {
+    font-size: 22px;
+    color: #4E4E4E;
+    font-family: 'Marcellus SC', serif;
+    text-decoration: underline; /* Subraya el título "My Café Especial" */
+}
+
+.cafe-info p {
+    font-size: 16px;
+    color: #555;
+}
+
+hr.linea-divisoria {
+    margin: 40px auto;
+    width: 80%;
+    border: 0;
+    border-top: 2px solid #4E4E4E;
+}
+
+.contacto {
+    margin-top: 40px;
+    text-align: left;
+    padding-left: 20px;
+    margin-left: 9%
+}
+
+.contacto h4 {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.contacto p {
+    font-size: 14px;
+    color: #555;
+}
+/* Footer */
+footer {
+    background-color: #fff;
+    color: #000;
+    padding: 40px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1320px;
+    margin: 0 auto;
+}
+
+.footer-logo img {
+
+    max-width: 100px; /* Reducir el tamaño del logo */
+    height: auto; /* Mantener la proporción */
+
+}
+
+.footer-contact {
+    flex: 2;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.footer-contact h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-contact ul {
+    padding: 0;
+}
+
+.footer-contact ul li {
+    margin-bottom: 8px;
+}
+
+.footer-links {
+    flex: 1;
+    text-align: right;
+}
+
+.footer-links a {
+    margin-left: 15px;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    padding-top: 10px;
+    border-top: 1px solid #000;
+}
+
+.footer-bottom a {
+    margin-left: 15px;
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+    margin-top: 10px;
+    display: inline-block;
+}
+/* Media Queries */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .cafe-especialidad header {
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btnBebida{
+        margin-left: 12%;
+        margin-right: 20%;
+        padding: 8px 15px;
+        border-radius: 15px;
+        background:#4E4E4E;
+        color:#fff;
+        font-family: 'Marcellus SC',serif;
+        font-size: 18px;
+        border-style: none;
+        margin-top:12px;
+        margin-bottom:12px;
+        cursor: pointer;
+    }
+
+    .container {
+        width: 100%;
+        padding: 0;
+    }
+
+    .informacion .buttons button{
+        margin-top: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-text h1 {
+        font-size: 30px;
+    }
+
+    .slider-tiendas .logos-wrapper {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .slide {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cupones h2 {
+        font-size: 36px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+}

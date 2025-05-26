@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pasaporte Compass de Cafés Especiales</title>
+    <link rel="stylesheet" href="STYLES/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Marcellus+SC&display=swap" rel="stylesheet">
+    <script>
+        localStorage.setItem('sesionAdmin',false);
+    </script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="img/logo/logo.jpg" alt="Logo Compass">
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Cafeterias.html">Cafeterías</a></li>
+
+                <li><a href="Ediciones.html">Ediciones</a></li>
+            </ul>
+            <div class="user-icon">
+                <a href="#"><span class="material-icons">account_circle</span></a>
+                <div class="hover-menu">
+                    <a href="inicioSesionPage.html">Iniciar Sesión</a>
+                    <a href="registroPage.html" id="enlaceRegistro">Registrarse</a>
+                </div>
+            </div>
+            
+        </nav>
+
+        <div class="hero container">
+            <div class="hero-text">
+                <h2>Bienvenido al</h2>
+                <h1>Pasaporte Compass de cafés especiales</h1>
+                <p>Vamos juntos a descubrir el café especial de Bogotá</p>
+            </div>
+            <div class="hero-image">
+                <img src="img/foto pasaporte .png" alt="Pasaporte Compass">
+            </div>
+        </div>
+        
+    </header>
+    <section class="cookies-container">
+        <div class="boxed-cookies">
+            <p>Usamos cookies para mejorar tu experiencia y optimizar la  funcionalidad en este 
+                Pasaporte virtual de Cafés Especiales de Bogotá. Al continuar en el sitio aceptas 
+                nuestra Política de Cookies.</p>
+            <a class="btn-aceptar-cookies">ACEPTAR</a>
+            <a class="btn-NO-aceptar-cookies">NO ACEPTAR</a>
+        </div>
+    </section>  
+    <section class="bienvenida container">
+        <p>
+            ¡Bienvenid@ a nuestro pasaporte digital de café!, una invitación a explorar y disfrutar de las maravillas del café especial en Bogotá.
+            Este pasaporte te ayudará a conocer las mejores tiendas de café, construir comunidad y apoyar proyectos locales.
+        </p>
+    </section>
+    <section class="como-funciona container">
+        <h2>¿Cómo funciona?</h2>
+        <div class="funciona-horizontal">
+            <div class="funciona-item">
+                <span class="material-icons">place</span>
+                <h3>Recorre las tiendas</h3>
+                <p>Visita las diversas tiendas de café que forman parte de nuestra comunidad.</p>
+            </div>
+            <div class="funciona-item">
+                <span class="material-icons">verified</span>
+                <h3>Colecciona sellos</h3>
+                <p>Recibirás un sello virtual especial que certifica tu visita.</p>
+            </div>
+            <div class="funciona-item">
+                <span class="material-icons">store</span>
+                <h3>Conoce proyectos aliados</h3>
+                <p>Conoce más sobre los proyectos y productores que colaboran con estas tiendas.</p>
+            </div>
+            <div class="funciona-item">
+                <span class="material-icons">share</span>
+                <h3>Comparte y conéctate</h3>
+                <p>Comparte tu viaje en redes sociales con el usuario y el hashtag #compassdecafe.</p>
+            </div>
+        </div>
+    </section>
+    <section class="slider-tiendas container">
+        <h2>NUESTROS MIEMBROS</h2>
+        <div class="logos-wrapper">
+            <img src="img/logo/aguitanegra.jpg" alt="Empresa 1">
+            <img src="img/logo/a0d72630235fbf4d483c806d1a962b55.png" alt="Empresa 2">
+            <img src="img/logo/cafegonzales.jpg" alt="Empresa 3">
+            <img src="img/logo/coffeeStylers.png" alt="Empresa 4">
+            <img src="img/logo/360b5bf16bdd84cf01e7d27ef3e5341f.png" alt="Empresa 5">
+            <img src="img/logo/vbronx.jpg" alt="Empresa 6">
+            <img src="img/logo/c749ae808a8897010094541f2b426d78.jpeg" alt="Empresa 7">
+        </div>
+
+        <section class="slider-cafes container">
+            <h2>ALGUNOS CAFÉS DE NUESTRA COMUNIDAD</h2>
+            <div class="slider-wrapper">
+                <!-- Diapositiva 1 -->
+                <div class="slide active">
+                    <div class="slide-img">
+                        <img src="img/logo/coffeeStylers.png" alt="Coffee Stylers">
+                    </div>
+                    <div class="slide-info">
+                        <h3>COFFEE STYLERS</h3>
+                        <p>Somos la comunidad que ve el café como estilo de vida, diseñamos un espacio único para ti para vivir experiencias entorno al café de especialidad conectando con comunidades caficultoras.</p>
+                        <ul class="contacto">
+                            <li>📍 <a href="https://www.google.com/maps?q=Calle+57+%2319-35" target="_blank">Calle 57 #19-35</a></li>
+                            <li>📸 <a href="https://instagram.com/coffeestylers" target="_blank">@coffeestylers</a></li>
+                            <li>📞 (+57) 321 90 20 117</li>
+                        </ul>
+                        <!-- <button id="btnLeeMas" onclick="location.href='infoCafeteria.html'">LEE MÁS</button> -->
+                    </div>
+                </div>
+
+                <!-- Diapositiva 2 -->
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="img/logo/c749ae808a8897010094541f2b426d78.jpeg" alt="La Tintería">
+                    </div>
+                    <div class="slide-info">
+                        <h3>LA TINTERÍA</h3>
+                        <p>Tienda de café de especialidad, ubicados en el corazón de Chapinero alto, nos enfocamos en crear comunidad y reconocer la tradición sin perder la calidad.</p>
+                        <ul class="contacto">
+                            <li>📍 <a href="https://www.google.com/maps?q=C1+54A+%2314-21+Piso+21" target="_blank">C1 54A #14-21 Piso 21</a></li>
+                            <li>📸 <a href="https://instagram.com/cafeslatinteria" target="_blank">@cafeslatinteria</a></li>
+                            <li>📞 (+57) 310 808 06 58</li>
+                        </ul>
+                        <!-- <button id="btnLeeMas" onclick="location.href='infoCafeteria.html'">LEE MÁS</button> -->
+                    </div>
+                </div>
+
+                <!-- Diapositiva 3 -->
+                <div class="slide">
+                    <div class="slide-img">
+                        <img src="img/logo/cafegonzales.jpg" alt="Café González">
+                    </div>
+                    <div class="slide-info">
+                        <h3>Café González</h3>
+                        <p>Nos enorgullece ser un legado familiar que trasciende generaciones, dedicado a ofrecer un café impregnado de auténtica tradición.</p>
+                        <ul class="contacto">
+                            <li>📍 <a href="https://www.google.com/maps?q=Av.+Cra+19+%23123-60" target="_blank">Av. Cra 19 #123-60</a></li>
+                            <li>📸 <a href="https://instagram.com/cafe_gonzalez" target="_blank">@cafe_gonzalez</a></li>
+                            <li>📞 (+57) 300 44 13 386</li>
+                        </ul>
+                        <!-- <button id="btnLeeMas" onclick="location.href='infoCafeteria.html'">LEE MÁS</button> -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Botones de navegación -->
+            <button class="slider-prev" onclick="moveSlide(-1)">&#10094;</button>
+            <button class="slider-next" onclick="moveSlide(1)">&#10095;</button>
+        </section>
+        <script>
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                const slides = document.querySelectorAll('.slide');
+                if (index >= slides.length) {
+                    currentSlide = 0;
+                } else if (index < 0) {
+                    currentSlide = slides.length - 1;
+                } else {
+                    currentSlide = index;
+                }
+
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === currentSlide);
+                });
+            }
+
+            function moveSlide(step) {
+                showSlide(currentSlide + step);
+            }
+
+            // Initialize the first slide
+            document.addEventListener('DOMContentLoaded', () => {
+                showSlide(currentSlide);
+            });
+        </script>
+        <section class="registro container">
+            <p>
+                ¿Tienes una <span class="resaltado-cafe">tienda de café</span> en Bogotá y te gustaría ser parte de <span class="resaltado-comunidad">nuestra comunidad</span>?
+            </p>
+            <button id="btnRegistro">Regístrate</button>
+        </section>
+    </section>   
+    <!-- Sección de Cupones  -->
+    <section class="cupones">
+    <div class="cupones-content">
+        <h2>CUPONES</h2>
+        <p>PARTICIPA Y DEGUSTA LOS CAFÉS DE AUTOR</p>
+        <p>QUE CADA TIENDA TIENE PARA OFRECERTE</p>
+        
+        <div class="cupones-button-container">
+            <button onclick="window.location.href='Cafeterias.html'">REVISA LAS CAFETERÍAS</button>
+            <span class="terminos">*Aplican términos y condiciones</span>
+        </div>
+    </div>
+    </section>
+    <script src="Functions/cookies.js"></script>
+</body>  
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const botonRegistro = document.getElementById("btnRegistro");
+        const enlaceRegistro = document.getElementById("enlaceRegistro");
+
+        const fechasHabilitadas = [];
+
+        let fechaInicio='',fechaFin='';
+        ajaxRequest("api/GET/mostrarFecha.php", "POST", null, function(response){
+            console.log("server response: ",response);
+            fechaInicio=response.datos[0].fechaInicio;
+            fechaFin=response.datos[0].fechaInicio;
+        });
+
+        function ajaxRequest(url,method,data,callback){
+        let xhr = new XMLHttpRequest();
+        xhr.open(method,url,true);
+        xhr.setRequestHeader("Content-Type", "application/json;charset=UTF-8");
+        xhr.onreadystatechange = function(){
+            if (xhr.readyState ===4 && xhr.status===200){
+                callback(JSON.parse(xhr.responseText));
+            }
+        };
+        xhr.send(JSON.stringify(data));
+        }
+
+        const inicio = new Date(fechaInicio);
+        const fin = new Date(fechaFin);
+
+        for (let fecha = new Date(inicio); fecha <= fin; fecha.setDate(fecha.getDate() + 1)) {
+            fechasHabilitadas.push(fecha.toISOString().split("T")[0]);
+        }
+
+        const hoy = new Date();
+        const hoyISO = hoy.toISOString().split("T")[0];
+
+        const proximaFecha = fechasHabilitadas
+            .map(f => new Date(f))
+            .find(f => f > hoy);
+
+        function validarRegistro(e, origen) {
+            if (fechasHabilitadas.includes(hoyISO)) {
+                localStorage.setItem('accesoAregistro',true);
+                window.location.href = "registroPage.html";
+            } else {
+                e.preventDefault();
+
+                const anterior = document.querySelector(".alerta-fecha");
+                if (anterior) anterior.remove();
+
+                const mensaje = document.createElement("div");
+                mensaje.className = "alerta-fecha";
+
+                let texto = `⚠ Hoy (${hoyISO}) no está disponible para registrar tu cafetería. No estamos en temporada de inscripciones.`;
+
+                if (proximaFecha) {
+                    const msPorDia = 1000 * 60 * 60 * 24;
+                    const diasFaltantes = Math.ceil((proximaFecha - hoy) / msPorDia);
+                    const opciones = { year: 'numeric', month: 'long', day: 'numeric' };
+                    const fechaFormateada = proximaFecha.toLocaleDateString('es-CO', opciones);
+                    texto += ` La próxima apertura será el ${fechaFormateada} (faltan ${diasFaltantes} día${diasFaltantes > 1 ? 's' : ''}).`;
+                }
+
+                mensaje.textContent = texto;
+                localStorage.setItem('accesoAregistro',false);
+
+                let contenedor;
+                if (origen === 'registro') {
+                    contenedor = document.querySelector(".registro");
+                } else if (origen === 'menu') {
+                    contenedor = document.querySelector(".hero");
+                } else {
+                    contenedor = document.body;
+                }
+
+                contenedor.appendChild(mensaje);
+
+                setTimeout(() => {
+                    mensaje.remove();
+                }, 7000);
+            }
+        }
+
+        if (botonRegistro) {
+            botonRegistro.addEventListener("click", (e) => validarRegistro(e, 'registro'));
+        }
+
+        if (enlaceRegistro) {
+            enlaceRegistro.addEventListener("click", (e) => validarRegistro(e, 'menu'));
+        }
+    });
+    </script>
+  
+  <!-- Footer -->
+<footer>
+    <div class="footer-content container">
+        <div class="footer-logo">
+            <img src="img/logo/Logo Png.png" alt="Logo Compass">
+        </div>
+        <div class="footer-contact">
+            <h3>Contáctanos</h3>
+            <ul>
+                <li><a href="https://instagram.com/compassdecafe">@compassdecafe</a></li>
+                <li><a href="mailto:pasaportedigital@gmail.com">pasaportedigital@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <a href="politicas.html">Políticas de privacidad</a>
+        <a href="terminos.html">Términos y condiciones</a>
+        <p>© 2025, Pasaporte Compass de Cafés Especiales por UMNG</p>
+    </div>
+
+</footer>
+        

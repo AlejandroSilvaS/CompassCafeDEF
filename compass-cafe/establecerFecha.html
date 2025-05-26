@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Establecer fechas de nueva versión</title>
+    <link rel="stylesheet" href="STYLES/reestablecerContrasena.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Marcellus+SC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/784b1f5477.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="Functions/establecerFecha.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="img/logo/logo.jpg" alt="Logo Compass">
+            </div>
+            <ul class="menu">
+                <!-- <li><a href="index.html">Home</a></li> -->
+                <li><a href="aspirantes.html">Aspirantes</a>
+                <li><a href="establecerFecha.html">Fechas</a></li>
+            </ul>
+            <div class="user-icon">
+                <a href="#"><span class="material-icons">account_circle</span></a>
+                <div class="hover-menu">
+                    <!-- <a href="inicioSesionPage.html">Iniciar Sesión</a> -->
+                    <a id="cerrarSesionbtn" href="index.html">Cerrar Sesión</a>
+                </div>
+            </div>
+        </nav>        
+    </header>
+
+    <div class="grid-container">   
+        <div class="container-titulo">
+            <h1>ESTABLECE LA FECHA DE INSCRIPCIÓN DE LA NUEVA EDICIÓN</h1>
+            <p>Establece la fecha de inicio y de finalización para que las tiendas aspirantes puedan registrarse.</p>
+        </div>
+        <form class="formulario" id="formulario">
+            <p class="fechaInicial" id="fechaInicial"></p>
+            <p class="fechaFin" id="fechaFin"></p>
+            <div class="formulario__grupo" id="grupo__Inicio">
+                <label for="correo">Fecha de inicio</label>
+                <input class="inputBox" type="date" id="fechaInicioInput" name="fechaInicio" placeholder="">
+                <p class="mensaje-error">El correo solo puede contener letras, números, puntos, guiones y guión bajo.</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__fechaFin">
+                <label for="password">Fecha de finalización</label>
+                <input class="inputBox" type="date" name="fechaFin" id="fechaFinInput">
+                <p class="mensaje-error">La contraseña debe contener de 4 a 12 dígitos.</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__confirmarPassword">
+                <label class="etiquetaInput" for="password">Inserta la contraseña de administrador</label>
+                <input class="inputBox" type="password" id="passwordConfirm" name="confirmContrasena">
+                <p class="mensaje-error">Contraseña incorrecta.</p>
+            </div>
+
+            <div class="grupo__mensaje" id="grupo__mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b> Contraseña Incorrecta.</p>
+            </div>
+            
+            <input class="btnIngresar" type="submit" name="btnIngresar" id="btnIngresar" value="Guardar">
+        </form>
+    </div>
+    <!-- <script src="Functions/validacionAuth.js"></script> -->
+</body>
+
+<footer>
+    <div class="footer-content container">
+        <div class="footer-logo">
+            <img src="img/logo/Logo Png.png" alt="Logo Compass">
+        </div>
+        <div class="footer-contact">
+            <h3>Contáctanos</h3>
+            <ul>
+                <li><a href="https://instagram.com/compassdecafe">@compassdecafe</a></li>
+                <li><a href="mailto:pasaportedigital@gmail.com">pasaportedigital@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <a href="politicas.html">Políticas de privacidad</a>
+        <a href="terminos.html">Términos y condiciones</a>
+        <p>© 2025, Pasaporte Compass de Cafés Especiales por UMNG</p>
+    </div>
+</footer>
+
+</html>

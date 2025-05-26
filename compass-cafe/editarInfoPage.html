@@ -1,0 +1,159 @@
+<!DOCTYPE h</a>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar información</title>
+    <link rel="stylesheet" href="STYLES/editarInfoPage.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Marcellus+SC&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/784b1f5477.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="Functions/editarPerfil.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="logo">
+                <img src="img/logo/logo.jpg" alt="Logo Compass">
+            </div>
+            <ul class="menu">
+                <li><a href="cafeteriasNueva.html">Cafeterías</a>
+                <li><a href="myCafeteria.html" clas="li-micafe">Mi cafetería</a>
+            </ul>
+            <div class="user-icon">
+                <a href="#"><span class="material-icons">account_circle</span></a>
+                <div class="hover-menu">
+                    <a href="editarInfoPage.html">Editar mi sitio</a>
+                    <a id="cerrarSesionbtn" href="index.html">Cerrar sesión</a>
+                </div>
+            </div>
+        </nav>        
+    </header>
+
+    <div class="grid-container"> 
+        <div class="titulo">                  
+            <h1>INFORMACIÓN DE TU TIENDA</h1>
+        </div>
+        <form class="formulario" id="formulario">
+            <!--<img src="imagenes/logopassport.png" alt="Imagen centrada" class="centro-imagen">-->
+            
+            <div class="formulario__grupo" id="grupo__NIT">
+                <label class="etiquetaInput" for="nit">NIT</label>
+                <input class="formInput" type="number" id="nit" name="nit" value="000000000" disabled>
+                <p class="mensaje-error">El NIT solo puede contener nueve (9) dígitos.</p>
+            </div>
+            
+            <div class="formulario__grupo" id="grupo__correo">
+                <label class="etiquetaInput" for="correo">Email</label>
+                <input class="formInput" type="email" id="correo" name="email" value="micorreo@tucorrreo.com" disabled>
+                <p class="mensaje-error">El correo solo puede contener letras, números, puntos, guiones y guión bajo.</p>
+            </div>
+
+            <div class="formulario__grupo" id="grupo__cuentaInstagram">
+                <label class="etiquetaInput" for="cuentaInstagram">Cuenta de Instagram</label>
+                <input class="formInput" type="text" id="cuentaInstagram" name="cuentainstagram" value="mi_cafe">
+                <p class="mensaje-error">La cuenta de usuario debe contener de 4 a 16 dígitos y solo puedo contener letras, números y guión bajo. Escribir sin el @.</p>
+            </div>
+            
+            <div class="formulario__grupo" id="grupo__numeroCelular">
+                <label class="etiquetaInput" for="numeroCel">Número de whattsapp</label>
+                <input class="formInput" type="number" id="numeroCel" name="numeroCelular" value="31233344455">
+                <p class="mensaje-error">El número de whattsapp debe contener 10 números.</p>
+            </div>
+                
+            <div class="formulario__grupo" id="grupo__nombre__tienda">
+                <label class="etiquetaInput" for="nombreTienda">Nombre de la tienda</label>
+                <input class="formInput" type="text" id="nombreTienda" name="nombreTienda" value="Nombre de la tienda">
+                <p class="mensaje-error">Esta casilla solo puedo contener letras, números, puntos, guiones y guión bajo. (Máximo 40 carácteres)</p>
+            </div>
+            
+            <div class="formulario__grupo" id="grupo__largeDescripcion">
+                <label class="etiquetaInput" for="largeDescription">Edita la descripción amplia de la tienda</label>
+                <textarea class="largeDescripcion" name="descripcionLarga" id="largeDescripcion" placeholder="Desde 1900 estamos ofreciendo 
+                cafe de autor en la ciudad de bogotá..."></textarea>
+                <p class="mensaje-error">Esta casilla debe contener más de 50 palabras.</p>
+            </div>
+            
+            <div class="formulario__grupo" id="grupo__breveDescripcion">
+                <label class="etiquetaInput" for="breveDescripcion">Edita la descripción breve de la tienda</label>
+                <textarea class="breveDescripcion" name="descripcionBreve" id="breveDescripcion" placeholder="No es solo una café, es una experiencia"></textarea>
+                <p class="mensaje-error">Esta casilla debe contener entre 3 a 12 palabras.</p>
+            </div>
+            
+            <div class="formulario__grupo" id="grupo__bebida">
+                <label class="etiquetaInput" for="bebida">Nombre de la bebida especial con la que participarás</label>
+                <input class="formInput" type="text" id="bebida" name="nombreBebida" value="Nombre de la bebida">
+                <p class="mensaje-error">Esta casilla solo puedo contener letras, números, puntos, guiones y guión bajo. (Máximo 40 carácteres)</p>
+            </div>
+            
+            <div class="formulario__grupo" id="grupo__descripcionBebida">
+                <label class="etiquetaInput" for="descripcionBebida">Edita la descripción de la bebida especial</label>
+                <textarea class="descripcionBebida" name="descripcionCafe" id="descripcionBebida" placeholder="Una explosión de sabores recorrera tu paladar al degustar nuestra bebida..."></textarea>
+                <p class="mensaje-error">Esta casilla debe contener entre 10 y 50 palabras.</p>
+            </div>
+           
+            <div class="formulario__grupo" id="grupo__direccion">
+                <label class="etiquetaInput" for="direccion">Edita la dirección de la tienda</label>
+                <input class="formInput" type="text" id="direccion" name="direccionTienda" value="Cra ... #...">
+                <p class="mensaje-error">Debes ingresar una dirección válida.</p>
+            </div>
+                    
+            <div class="formulario__grupo" id="grupo__imagenPortada">
+                <label class="etiquetaInput" for="imagenPortada">Edita la imagen para la portada</label>
+                <input class="formInput imagenPortada" type="file" id="imagenPortada" name="imgPortada">
+                <img id="img-portada" src="img/portada/default.png" alt="portada de la tienda">
+                <p class="pie-foto"><i>Imagen actual de la portada</i></p>
+                <p class="mensaje-error">El archivo debe ser formato imagen (.jpg, jpeg, png)</p>
+            </div>
+            
+            <div class="formulario__grupo" id="grupo__imagenLogo">
+                <label class="etiquetaInput" for="imagenLogo">Edita la imagen del logo de la tienda</label>
+                <input class=" formInput imagenLogo" type="file" id="imagenLogo" name="imgLogo">
+                <img id="img-logo" src="img/logo/default.png" alt="logo de la tienda">
+                <p class="pie-foto"><i>Imagen actual del Logo</i></p>
+                <p class="mensaje-error">El archivo debe ser formato imagen (.jpg, jpeg, png)</p>           
+            </div>
+            
+            <div class="formulario__grupo" id="grupo__imagenBebida">
+                <label class="etiquetaInput" for="imagenBebida">Edita la imagen de la bebida especial</label>
+                <input class="formInput imagenBebida" type="file" id="imagenBebida" name="imgBebida">
+                <img id="img-bebida" src="img/bebida/default.png" alt="bebida de la tienda">
+                <p class="pie-foto"><i>Imagen actual de la Bebida especial</i></p>
+                <p class="mensaje-error">El archivo debe ser formato imagen (.jpg, jpeg, png)</p>
+            </div>                   
+
+            <div class= "grupo__mensaje" id="grupo__mensaje">
+                <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error:</b>El formulario debe llenarse correctamente.</p>
+            </div>
+
+            <div class="grupo__botonRegistrar">
+                <button type="submit" class="boton">Guardar</button>
+                <p class="mensaje-exito" id="mensaje-exito">Tus datos se han actualizado correctamente!</p>
+            </div>
+        </form>
+    </div>
+
+    <script src="Functions/formularioeditarInfoPage.js"></script>
+</body>
+
+<footer>
+    <div class="footer-content container">
+        <div class="footer-logo">
+            <img src="img/logo/Logo Png.png" alt="Logo Compass">
+        </div>
+        <div class="footer-contact">
+            <h3>Contáctanos</h3>
+            <ul>
+                <li><a href="https://instagram.com/compassdecafe">@compassdecafe</a></li>
+                <li><a href="mailto:pasaportedigital@gmail.com">pasaportedigital@gmail.com</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <a href="politicas.html">Políticas de privacidad</a>
+        <a href="terminos.html">Términos y condiciones</a>
+        <p>© 2025, Pasaporte Compass de Cafés Especiales por UMNG</p>
+    </div>
+</footer>
+</html>
